@@ -142,6 +142,10 @@ button {
   outline-offset: 3px;
 }
 
+main {
+  min-height: calc(100vh - 64px - 64px); 
+}
+
 /* main navigation: pushed to the right reliably */
 .main-nav {
   display: flex;
