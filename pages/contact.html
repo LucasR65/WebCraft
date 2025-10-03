@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — WebCraft Solutions</title>
+  <meta name="description" content="Contactez WebCraft Solutions">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a class="logo-link" href="../index.html" aria-label="Aller à l'accueil">
+          <img class="logo-img" src="../images/logo_webcraft.png" alt="Logo WebCraft Solutions">
+        </a>
+      </div>
+
+      <nav class="main-nav" aria-label="Menu principal">
+        <a href="../index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="contact" aria-labelledby="contact-title">
+    <h1 id="contact-title">Contact</h1>
+    <p class="hero-sub">Envoie-nous un message — on répondra rapidement.</p>
+
+    <form id="contact-form" novalidate>
+      <div class="form-row">
+        <label for="name">Nom <span aria-hidden="true">*</span></label>
+        <input id="name" name="name" type="text" required aria-required="true" aria-describedby="err-name">
+        <div id="err-name" class="form-error" role="alert" hidden></div>
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email <span aria-hidden="true">*</span></label>
+        <input id="email" name="email" type="email" required aria-required="true" aria-describedby="err-email">
+        <div id="err-email" class="form-error" role="alert" hidden></div>
+      </div>
+
+      <div class="form-row">
+        <label for="message">Message <span aria-hidden="true">*</span></label>
+        <textarea id="message" name="message" rows="6" required aria-required="true" aria-describedby="err-message"></textarea>
+        <div id="err-message" class="form-error" role="alert" hidden></div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">Envoyer</button>
+        <span id="form-success" class="form-success-msg" role="status" hidden></span>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> WebCraft Solutions — Tous droits réservés</p>
+      <div class="socials">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script partagé -->
+  <script src="../js/script.js" defer></script>
+
+  <!-- Script spécifique contact -->
+  <script src="../js/contact.js" defer></script>
+</body>
+</html>

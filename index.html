@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebCraft Solutions — Portfolio</title>
+  <meta name="description" content="Portfolio interactif de l'agence WebCraft Solutions — Projets, technologies et détails.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a class="logo-link" href="index.html" aria-label="Aller à l'accueil">
+          <img class="logo-img" src="./images/logo_webcraft.png" alt="Logo WebCraft Solutions">
+        </a>
+      </div>
+
+      <nav class="main-nav" aria-label="Menu principal">
+        <a href="index.html">Accueil</a>
+        <a href="pages/about.html">À propos</a>
+        <a href="pages/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home" aria-labelledby="hero-title">
+    <div class="container hero-inner">
+      <h1 id="hero-title" class="hero-title">Nous concevons des interfaces web claires et rapides</h1>
+      <p class="hero-sub">Agence orientée UI/UX — projets responsive, performants et accessibles.</p>
+      <a class="btn-primary" href="#portfolio">Voir nos projets</a>
+    </div>
+  </section>
+
+  <!-- Portfolio / Filters -->
+  <main>
+    <section id="portfolio" class="portfolio container" aria-labelledby="portfolio-title">
+      <h2 id="portfolio-title">Nos projets</h2>
+
+      <!-- Filtre par technologies -->
+      <div id="filters" class="filters" role="toolbar" aria-label="Filtres par technologie"></div>
+
+      <!-- Loader -->
+      <div id="loader" class="loader" hidden>
+        <div class="spinner"></div>
+        <span class="sr-only">Chargement des projets…</span>
+      </div>
+
+      <!-- Zone de la grille -->
+      <div id="projects-grid" class="projects-grid" role="list" aria-live="polite"></div>
+
+      <!-- Message d'erreur -->
+      <div id="error-msg" class="error-msg" role="alert" hidden></div>
+    </section>
+  </main>
+
+  <!-- Modal détails projet -->
+  <div id="project-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-backdrop" data-action="close" tabindex="-1"></div>
+
+    <div class="modal-content" role="document" aria-describedby="modal-desc">
+      <button class="modal-close" id="modal-close" aria-label="Fermer la fenêtre">✕</button>
+
+      <h3 id="modal-title">Détails du projet</h3>
+      <img id="modal-image" src="images/logo_webcraft.png" alt="Image du projet">
+      <p id="modal-client" class="project-client"></p>
+      <p id="modal-desc"></p>
+
+      <h4>Fonctionnalités</h4>
+      <ul id="modal-features"></ul>
+
+      <p>
+        <a id="modal-link" class="btn-secondary" href="#" target="_blank" rel="noopener">Visiter le site</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> WebCraft Solutions — Tous droits réservés</p>
+      <div class="socials">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js" defer></script>
+</body>
+</html>

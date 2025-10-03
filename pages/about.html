@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>À propos — WebCraft Solutions</title>
+  <meta name="description" content="À propos de WebCraft Solutions — équipe, mission, statistiques et compétences.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <a class="logo-link" href="../index.html" aria-label="Aller à l'accueil">
+        <img class="logo-img" src="../images/logo_webcraft.png" alt="Logo WebCraft Solutions">
+      </a>
+    </div>
+
+    <nav class="main-nav" aria-label="Menu principal">
+      <a href="../index.html">Accueil</a>
+      <a href="about.html" aria-current="page">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container" id="about" aria-labelledby="about-title">
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-inner">
+      <h1 id="about-title" class="hero-title">À propos de WebCraft Solutions</h1>
+      <p class="hero-sub">Nous sommes une équipe passionnée qui crée des expériences web modernes, accessibles et performantes depuis plus de 5 ans.</p>
+    </div>
+  </header>
+
+  <!-- Présentation de l'agence -->
+  <section aria-labelledby="agency-title" class="portfolio">
+    <h2 id="agency-title" class="kicker">Notre histoire</h2>
+    <p>Fondée en 2019, WebCraft Solutions est née d'une vision simple : rendre le web plus beau, plus accessible et plus efficace. Nous combinons expertise technique et design réfléchi pour créer des solutions qui répondent aux besoins réels des utilisateurs.</p>
+    
+    <div class="margin-top">
+      <h3 class="kicker">Notre philosophie</h3>
+      <p>Nous croyons en un web ouvert, inclusif et performant. Chaque ligne de code, chaque design est pensé pour offrir la meilleure expérience possible, quel que soit l'appareil ou le handicap.</p>
+    </div>
+  </section>
+
+  <!-- Statistiques clés -->
+  <section aria-labelledby="stats-title" class="portfolio">
+    <h2 id="stats-title" class="kicker">En chiffres</h2>
+    <div class="projects-grid">
+      <div class="project-card center">
+        <div class="project-title text-blue">3+</div>
+        <div>Années d'expérience</div>
+      </div>
+      <div class="project-card center">
+        <div class="project-title text-green">8+</div>
+        <div>Projets réalisés</div>
+      </div>
+      <div class="project-card center">
+        <div class="project-title text-blue">72%</div>
+        <div>Clients satisfaits</div>
+      </div>
+      <div class="project-card center">
+        <div class="project-title text-green">15+</div>
+        <div>Technologies maîtrisées</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission / Values -->
+  <section aria-labelledby="mission-title" class="portfolio">
+    <h2 id="mission-title" class="kicker">Notre mission</h2>
+    <p>Concevoir des solutions web claires, performantes et inclusives. Nous combinons design réfléchi, code propre et une approche utilisateur centrée.</p>
+  </section>
+
+  <!-- Équipe -->
+  <section aria-labelledby="team-title" class="portfolio">
+    <div class="team-header">
+      <div>
+        <h2 id="team-title" class="kicker">L'équipe</h2>
+        <p class="input-hint">Filtrez par rôle pour trouver rapidement qui fait quoi.</p>
+      </div>
+      <div id="team-filters" class="filters" role="toolbar" aria-label="Filtres de l'équipe"></div>
+    </div>
+
+    <div id="team-grid" class="projects-grid" role="list" aria-live="polite"></div>
+  </section>
+
+  <!-- CTA Contact -->
+  <section class="portfolio">
+    <h3 class="kicker">Envie de collaborer ?</h3>
+    <p class="input-hint">Contactez-nous via la page contact ou envoyez un email à <a href="mailto:hello@webcraft.example">hello@webcraft.example</a>.</p>
+  </section>
+
+  <!-- Modal: member details -->
+  <div id="member-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="member-modal-title" hidden>
+    <div class="modal-backdrop" data-action="close"></div>
+
+    <div class="modal-content" role="document">
+      <h3 id="member-modal-title">Membre</h3>
+
+      <img id="member-modal-image" src="../images/placeholder.png" alt="Photo du membre" loading="lazy">
+
+      <div id="member-modal-role" class="kicker" aria-hidden="true"></div>
+      <p id="member-modal-bio"></p>
+
+      <ul id="member-modal-skills" class="techs" aria-label="Compétences"></ul>
+
+      <a id="member-modal-link" class="btn-secondary" href="#" target="_blank" rel="noopener">Voir profil</a>
+
+      <button id="member-modal-close" class="modal-close" type="button" aria-label="Fermer">✕</button>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> WebCraft Solutions — Tous droits réservés</p>
+    <div class="socials">
+      <a href="#" aria-label="Twitter">Twitter</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/about.js" defer></script>
+
+</body>
+</html>
