@@ -11,7 +11,7 @@
   --text: #0b2540;
   --muted: #4b5563;
   --green: #10b981;
-  --blue: #3b82f6;
+  --blue: #a7c9ff;
   --card: #f8fafc;
   --border: #e6eef6;
   --danger: #ef4444;
@@ -83,13 +83,15 @@ button {
    ===================== */
 
 /* header container */
+/* Header */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 60;
-  background: var(--bg);
+  background: var(--green); /* changement de fond */
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(4px);
+  
 }
 
 /* flex wrapper: stable height + centered alignment */
@@ -145,12 +147,14 @@ button {
   display: flex;
   align-items: center;
   gap: .25rem;
-  margin-left: auto; /* <<--- important : pousse la nav à droite */
+  margin-left: auto; 
+  color: #fff;
+
 }
 
 /* nav links */
 .main-nav a {
-  color: var(--muted);
+  color: #fff;
   text-decoration: none;
   margin-left: 1rem;
   font-weight: 600;
@@ -639,7 +643,17 @@ textarea.invalid {
   margin-top: 2rem;
   padding: 1.2rem 0;
   border-top: 1px solid var(--border);
-  color: var(--muted);
+  background: var(--green); /* changement de fond */
+  color: #fff; /* texte en blanc pour contraster */
+}
+
+
+.site-footer .socials a {
+  color: #fff; /* liens en blanc */
+}
+
+.site-footer .socials a:hover {
+  color: var(--blue); /* optionnel : couleur plus claire au hover */
 }
 
 .footer-inner {
